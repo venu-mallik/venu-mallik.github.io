@@ -1,5 +1,4 @@
-# venu-mallik.github.io
-TODO: Data Engineering blog 
+#### i am venu-mallik
 
 Welcome!
 
@@ -24,5 +23,13 @@ My experience:
     
     Python 6+, Javascript 4+, Java 4+
 
-Please find more details at https://venu-mallik.pages.dev 
+Please find project details and certifications [here](https://venu-mallik.pages.dev)
+
+Data Engineering references and differences:
+
+[basics](./data_basic.md)
+
+[basic operations](./data_operations.md)
+
+[services](./data_services.md)
 
