@@ -1,4 +1,11 @@
-#### i am venu-mallik
+#### Links
+
+[Home](./README.md) [Developer Profile](https://venu-mallik.pages.dev) [Data visualisation](https://climate.pages.dev)
+
+#### Data engineering
+
+[Basics](./data_basic.md) , [Operations](./data_operations.md) , [Services](./data_services.md)
+
 
 Welcome!
 
@@ -23,13 +30,4 @@ My experience:
     
     Python 6+, Javascript 4+, Java 4+
 
-Please find project details and certifications [here](https://venu-mallik.pages.dev)
-
-Data Engineering references and differences:
-
-[basics](./data_basic.md)
-
-[basic operations](./data_operations.md)
-
-[services](./data_services.md)
 

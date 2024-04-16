@@ -1,3 +1,12 @@
+#### Links
+
+[Home](./README.md) [Developer Profile](https://venu-mallik.pages.dev) [Data visualisation](https://climate.pages.dev)
+
+#### Data engineering
+
+[Basics](./data_basic.md) , [Operations](./data_operations.md) , [Services](./data_services.md)
+
+
 |Concept         |Spark                                        |DataStax Enterprise (DSE)              |Informatica                                     |Teradata                                     |Databricks                                              |Snowflake                                |
 |----------------|---------------------------------------------|---------------------------------------|------------------------------------------------|---------------------------------------------|--------------------------------------------------------|-----------------------------------------|
 |Type            |Distributed processing framework             |NoSQL database (Apache Cassandra)      |Data integration & ETL platform                 |Relational database management system (RDBMS)|Distributed processing framework (built on Apache Spark)|Cloud-based data warehouse               |
