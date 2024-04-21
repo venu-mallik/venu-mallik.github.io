@@ -1,11 +1,3 @@
-#### Links
-
-[Home](./README.md) [Developer Profile](https://venu-mallik.pages.dev) [Data visualisation](https://climate.pages.dev)
-
-#### Data engineering
-
-[Basics](./data_basic.md) , [Operations](./data_operations.md) , [Services](./data_services.md)
-
 
 |Concept         |Spark                                        |DataStax Enterprise (DSE)              |Informatica                                     |Teradata                                     |Databricks                                              |Snowflake                                |
 |----------------|---------------------------------------------|---------------------------------------|------------------------------------------------|---------------------------------------------|--------------------------------------------------------|-----------------------------------------|
