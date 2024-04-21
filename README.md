@@ -1,4 +1,4 @@
-#### My Profile |  [Home](./README.md) | [Developer Profile](https://venu-mallik.pages.dev) | [Data visualisation](https://climate.pages.dev)
+#### My Profile |  [Home](./README.md) | [Developer Profile](https://venu-mallik.github.io/venu-mallik) | [Data visualisation](https://venu-mallik.github.io/climate)
 
 #### Basic concepts |  [Basics](./data_basic.md) | [Types of processing](./types.md) | [Operations](./data_operations.md)
 
