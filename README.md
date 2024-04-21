@@ -10,7 +10,7 @@
 
 #### Services and Cloud
 
-[Apache solutions](./apache.md) |  [Cloud solutions](./cloud.md) | [Other solutions](./data_services.md) [Data visualisation](./visual.md)
+[Apache solutions](./apache.md) |  [Cloud solutions](./cloud.md) | [Other solutions](./data_services.md) | [Data visualisation](./visual.md)
 
 
 Welcome!
