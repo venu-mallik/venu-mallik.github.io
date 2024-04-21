@@ -1,6 +1,6 @@
-#### My Profile &raar;  [Home](./README.md) | [Developer Profile](https://venu-mallik.github.io/venu-mallik) | [Data visualisation](https://venu-mallik.github.io/climate)
+#### My Profile &rarr;  [Home](./README.md) | [Developer Profile](https://venu-mallik.github.io/venu-mallik) | [Data visualisation](https://venu-mallik.github.io/climate)
 
-#### Basic concepts &raar;  [Basics](./data_basic.md) | [Types of processing](./types.md) | [Operations](./data_operations.md)
+#### Basic concepts &rarr;  [Basics](./data_basic.md) | [Types of processing](./types.md) | [Operations](./data_operations.md)
 
 ### Data engineering landscape
 
