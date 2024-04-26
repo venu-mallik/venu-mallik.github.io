@@ -1,6 +1,6 @@
 import React, {useEffect} from 'react';
-import { GithubOutlined, UserOutlined } from '@ant-design/icons';
-import { Layout, Menu, theme, Space } from 'antd';
+import { GithubOutlined, UserOutlined, LinkedinOutlined } from '@ant-design/icons';
+import { Layout, Menu, theme, Space, Divider } from 'antd';
 import Markdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 
@@ -35,11 +35,16 @@ const App = () => {
           console.log(collapsed, type);
         }}
       >
-        <div style={{textAlign: 'center', alignContent: 'center', margin: '10px'}}>
+        <div style={{height: '75px', textAlign: 'center', alignContent: 'center', margin: '10px', }}>
             <h2>Venu Mallik</h2>
+            <br></br>
+            <email>venu.mallik@gmail.com</email> <br></br>
+            <a href='https://climate.pages.dev' target="_blank">vega lite demo</a>
+            <br></br>
             <Space direction='horizontal'>
-            <a hred='https://venu-mallik.pages.dev'><UserOutlined></UserOutlined>  </a>
-            <a href='https://github.com/venu-mallik'><GithubOutlined></GithubOutlined>  </a> 
+            <a href='https://venu-mallik.pages.dev' target="_blank"><UserOutlined></UserOutlined>  </a>
+            <a href='https://github.com/venu-mallik' target="_blank"><GithubOutlined></GithubOutlined>  </a> 
+            <a href='https://linkedin.com/in/venumallik' target="_blank"><LinkedinOutlined></LinkedinOutlined>  </a>
             </Space>
         </div>
       
