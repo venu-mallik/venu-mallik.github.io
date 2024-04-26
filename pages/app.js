@@ -1,6 +1,6 @@
 import React, {useEffect} from 'react';
-import { GithubOutlined, UserOutlined, LinkedinOutlined } from '@ant-design/icons';
-import { Layout, Menu, theme, Space, Divider } from 'antd';
+import { GithubOutlined, UserOutlined, LinkedinOutlined, CrownOutlined } from '@ant-design/icons';
+import { Layout, Menu, theme, Flex, Space } from 'antd';
 import Markdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 
@@ -35,17 +35,20 @@ const App = () => {
           console.log(collapsed, type);
         }}
       >
-        <div style={{height: '75px', textAlign: 'center', alignContent: 'center', margin: '10px', }}>
+        <div style={{ textAlign: 'center', alignContent: 'center', margin: '10px', }}>
+            <Space direction="vertical">
             <h2>Venu Mallik</h2>
-            <br></br>
-            <email>venu.mallik@gmail.com</email> <br></br>
-            <a href='https://climate.pages.dev' target="_blank">vega lite demo</a>
-            <br></br>
-            <Space direction='horizontal'>
-            <a href='https://venu-mallik.pages.dev' target="_blank"><UserOutlined></UserOutlined>  </a>
-            <a href='https://github.com/venu-mallik' target="_blank"><GithubOutlined></GithubOutlined>  </a> 
-            <a href='https://linkedin.com/in/venumallik' target="_blank"><LinkedinOutlined></LinkedinOutlined>  </a>
-            </Space>
+            <email>venu.mallik@gmail.com</email> 
+            <Flex justify="space-evenly" align="center">
+            <a href='https://venu-mallik.pages.dev' target="_blank"><UserOutlined ></UserOutlined>  </a>
+            <a href='https://github.com/venu-mallik' target="_blank"><GithubOutlined ></GithubOutlined>  </a> 
+            <a href='https://linkedin.com/in/venumallik' target="_blank"><LinkedinOutlined ></LinkedinOutlined>  </a>
+            </Flex>
+            <h4><u>Other websites</u> </h4>
+              <a href='https://climate.pages.dev' target="_blank">vega lite demo</a>              
+              <a href='https://minipix.in' target='_blank'> <CrownOutlined/>  OTT Nextjs</a>
+              <a href='https://minipix-api.ibee.ai/docs' targe='_blank'><CrownOutlined/> OTT Fastapi</a>
+          </Space>
         </div>
       
         <Menu theme="dark" mode="inline" 
