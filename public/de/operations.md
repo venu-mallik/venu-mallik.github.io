@@ -1,5 +1,6 @@
 
-export const operations = `|Operation             |Spark (PySpark)                                       |SQL                                                                    |Pandas                                          |
+
+|Operation             |Spark (PySpark)                                       |SQL                                                                    |Pandas                                          |
 |----------------------|------------------------------------------------------|-----------------------------------------------------------------------|------------------------------------------------|
 |Load Data (CSV)       |df = spark.read.csv("data.csv")                       |SELECT * FROM data.csv                                                 |df = pd.read_csv("data.csv")                    |
 |Load Data (Parquet)   |df = spark.read.parquet("data.parquet")               |(Not directly supported)                                               |df = pd.read_parquet("data.parquet")            |
@@ -18,4 +19,3 @@ export const operations = `|Operation             |Spark (PySpark)              
 |Create New Column     |df.withColumn("new_column", expr("column1 * column2"))|(Not directly supported, requires data manipulation)                   |df['new_column'] = df['column1'] * df['column2']|
 |Drop Columns          |df.drop("column_to_drop")                             |ALTER TABLE table DROP COLUMN column_to_drop                           |df.drop('column_to_drop', axis=1)               |
 |Rename Columns        |df.withColumnRenamed("old_name", "new_name")          |ALTER TABLE table RENAME COLUMN old_name TO new_name                   |df.rename(columns={'old_name': 'new_name'})     |
-`
