@@ -35,7 +35,7 @@ const App = () => {
           console.log(collapsed, type);
         }}
       >
-        <div style={{ textAlign: 'center', alignContent: 'center', margin: '10px', }}>
+        <div style={{ textAlign: 'center', alignContent: 'center', margin: '10px', color:'white' }}>
             <Space direction="vertical">
             <h2>Venu Mallik</h2>
             <email>venu.mallik@gmail.com</email> 
