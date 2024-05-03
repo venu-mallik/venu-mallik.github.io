@@ -61,7 +61,14 @@ const App = () => {
             </Menu.Item>
           ))}
           <Menu.SubMenu title="Basics">
-          { ["basics.md","types.md", "operations.md", "dbengines.md", "fileformats.md", "libraries.md"].map(item => ( 
+          { ["basics.md","types.md", "operations.md"].map(item => ( 
+            <Menu.Item key={`de/${item}`} title={item.split(".")[0]} 
+            onClick={(e)=>    setActive(e.key)           } >
+              {item.split(".")[0]}
+            </Menu.Item>
+          ))}</Menu.SubMenu>
+          <Menu.SubMenu title="Formats and Tools">
+          { ["dbengines.md", "fileformats.md", "libraries.md", "workflows.md"].map(item => ( 
             <Menu.Item key={`de/${item}`} title={item.split(".")[0]} 
             onClick={(e)=>    setActive(e.key)           } >
               {item.split(".")[0]}

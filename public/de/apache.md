@@ -1,17 +1,24 @@
-| Feature | Spark | Airflow | Hive | Flink | NiFi | Beam |
-|---------|-------|---------|------|-------|------|------|
-| Primary Use Case | Batch/Stream Processing, Machine Learning | Workflow Orchestration | Data Warehousing | Stream Processing | Data Integration | Unified Batch/Stream Processing |
-| Data Model | RDDs, DataFrames, Datasets | Directed Acyclic Graphs (DAGs) | Table-based | Streams and Tables | Data Flows | Portable Pipelines |
-| Processing Paradigm | Batch, Micro-Batch, Streaming | Workflow Scheduling | Batch (MapReduce) | Streaming, Batch | Data Routing and Transformation | Batch, Streaming |
-| Programming Interface | Scala, Python, R, Java, SQL | Python | HiveQL (SQL-like) | Java, Scala | Visual Data Flow Designer | Java, Python, Go |
-| Deployment Model | Clustered | Standalone or Clustered | Clustered (on Hadoop/Spark) | Clustered | Standalone or Clustered | Agnostic (Runners: Spark, Flink, Dataflow) |
-| Storage Integration | HDFS, S3, Cassandra, etc. | Various Data Sources | Hive Metastore (RDBMS or File System) | Kafka, HDFS, S3, etc. | HDFS, S3, Kafka, etc. | HDFS, S3, Kafka, BigQuery, etc. |
-| Fault Tolerance | RDD Transformations, Checkpointing | Configurable Retries and Alerting | Through Hadoop/Spark | Exactly-Once Semantics | Guaranteed Delivery, Backpressure | Through Runners (e.g., Spark, Flink) |
-| Ecosystem | Spark SQL, Spark Streaming, MLlib | Airflow Cloud, Plugins | HCatalog, Apache Tez, Apache Oozie | Flink CEP, Flink ML | Apache NiFi Registry, NiFi Extensions | Runners, I/O Transforms, SDKs |
-| Stream Processing | Micro-Batch (Spark Streaming), Structured Streaming | Orchestration of Streaming Jobs | Not Supported | True Streaming with Event-Time Windows | Stream Routing and Transformation | Through Runners (e.g., Flink) |
-| Machine Learning | MLlib, ML Pipelines | Orchestration of ML Workflows | Not Supported | Flink ML | Not Supported | Through Runners (e.g., Spark) |
-| SQL Support | Spark SQL | Limited (for Metadata) | HiveQL | Table API, SQL-like | Not Supported | Through Runners (e.g., Spark SQL) |
-| Scheduling | Standalone or YARN | DAG-based Scheduling | YARN or Apache Oozie | Standalone or YARN | NiFi Flow Scheduler | Through Runners (e.g., Dataflow) |
-| Monitoring | Spark UI, Metrics | Airflow UI, Alerts | Hive UI, Logs | Web UI, Metrics | NiFi UI, Bulletins | Through Runners (e.g., Dataflow Monitoring) |
-| Community | Large and Active | Large and Active | Large and Active | Growing | Growing | Growing |
+| Feature | Hadoop | Spark | Kafka | Hive | Impala | Flink | Cassandra | HBase | Zookeeper | Solr | NiFi | Beam |
+|---------|--------|-------|-------|------|--------|-------|-----------|-------|-----------|------|------|------|
+| Language | Java | Scala/Java/Python/R | Scala/Java | SQL-like | SQL | Java/Scala | Java | Java | Java | Java | Java | Java/Python/Go |
+| Processing Model | Batch | Batch/Streaming | Streaming | Batch | Batch | Batch/Streaming | Database | Database | Coordination | Search | Data Flow | Batch/Streaming |
+| Data Format | HDFS | Various | Binary | HDFS | Parquet/ORC | Various | SSTable | HFile | - | JSON/XML | Various | Various |
+| Distributed | Yes | Yes | Yes | Yes | Yes | Yes | Yes | Yes | Yes | Yes | Yes | Yes |
+| In-Memory | No | Yes | No | No | No | Yes | No | No | No | No | No | No |
+| SQL Support | No | Limited | No | Yes | Yes | Limited | No | No | No | No | No | No |
+| Fault Tolerance | Yes | Yes | Yes | Yes | Yes | Yes | Yes | Yes | Yes | Yes | Yes | Yes |
+| Scalability | High | High | High | High | High | High | High | High | High | High | High | High |
+| Ecosystem | Large | Large | Large | Large | Large | Growing | Large | Large | Large | Large | Large | Large |
+| Latency | High | Low | Low | High | Low | Low | Low | Low | Low | Low | Low | Low |
+| Resource Manager | YARN | YARN/Standalone | - | YARN | YARN | YARN/Standalone | - | YARN | - | YARN/Standalone | - | - |
+| Security | Kerberos | Kerberos | SSL/SASL | Kerberos | Kerberos | Kerberos | SSL | Kerberos | Kerberos | Kerberos | Kerberos | Kerberos |
+| Machine Learning | No | MLlib | No | No | No | Limited | No | No | No | No | No | No |
+| Streaming Support | No | Yes | Yes | No | No | Yes | No | No | No | No | Yes | Yes |
+| Batch Support | Yes | Yes | No | Yes | Yes | Yes | No | No | No | No | Yes | Yes |
+| Data Ingestion | HDFS | Various | Producers | HDFS | HDFS | Various | Clients | Clients | - | Indexing | Various | Various |
+| Query Language | - | SQL-like | - | HiveQL | SQL | SQL-like | CQL | - | - | Solr Query | - | - |
+| Data Storage | HDFS | Memory/Disk | Disk | HDFS | HDFS | Memory/Disk | Disk | HDFS | Znode | Lucene Index | - | - |
+| Cloud Support | Limited | Good | Good | Limited | Limited | Good | Limited | Limited | Limited | Limited | Good | Good |
+| Open Source | Yes | Yes | Yes | Yes | Yes | Yes | Yes | Yes | Yes | Yes | Yes | Yes |
+| Use Case | Big Data Processing | Batch/Streaming Analytics | Messaging | Data Warehousing | Interactive SQL | Streaming Analytics | Distributed Database | Wide-Column Store | Coordination Service | Enterprise Search | Data Integration | Batch/Streaming Pipelines |
 
