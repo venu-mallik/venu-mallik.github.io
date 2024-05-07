@@ -15,8 +15,13 @@ const App = () => {
   const [mdown, setMdown] = React.useState('https://venu-mallik.pages.dev');
 
   useEffect(() => {
+    if(active.includes(".md")){
     fetch(active)
       .then(res => res.text()).then(res => setMdown(res));
+    }
+    if(active === 'lab'){
+
+    }
   },[active])
 
   const de_names = ['apache.md', 'batch.md', 'cloud.md', 'data_basic.md', 'data_operations.md', 'data_services.md', 'olap.md', 'oltp.md', 'README.md', 'realtime.md', 'routes.md', 'streams.md', 'types.md', 'visual.md']
@@ -61,7 +66,7 @@ const App = () => {
             </Menu.Item>
           ))}
           <Menu.SubMenu title="Basics">
-          { ["basics.md","types.md", "operations.md"].map(item => ( 
+          { ["basics.md", "operations.md", "types.md", "bitools.md"].map(item => ( 
             <Menu.Item key={`de/${item}`} title={item.split(".")[0]} 
             onClick={(e)=>    setActive(e.key)           } >
               {item.split(".")[0]}
@@ -88,6 +93,10 @@ const App = () => {
               {item.split(".")[0]}
             </Menu.Item>
           ))}</Menu.SubMenu>
+          <Menu.Item key={`lab`} title={"Lab"} 
+            onClick={(e)=>    setActive(e.key)  } >
+              {"Lab"}
+          </Menu.Item>
 
 
 
@@ -107,6 +116,7 @@ const App = () => {
             margin: '5px 5px 0',
           }}
         >
+          {active.includes(".md") && <>
           <div
             style={{
               padding: 24,
@@ -116,7 +126,14 @@ const App = () => {
             }}
           >
             <Markdown remarkPlugins={[remarkGfm]} >{mdown}</Markdown>
-          </div>
+          </div> </>}
+          {active === 'lab' && 
+            <iframe
+            src="https://jupyterlite.github.io/demo/repl/index.html?toolbar=1&code=import numpy as np"
+            width="100%"
+            height="100%"
+          ></iframe>
+          }
         </Content>
       </Layout>
     </Layout>
