@@ -1,27 +1,14 @@
 ## Hello, this is Venu. 
 
-#### I made this blog to map data engineering landscape. Please write to me @ venu.mallik@gmail.com if you have any feedback or suggestions.
-
-
-#### My Profile &rarr; [Developer Profile](https://venu-mallik.github.io/venu-mallik) | [Data visualisation](https://venu-mallik.github.io/climate)
-
-
+#### I made this blog using AI and Next JS to map data engineering landscape. Please write to me @ venu.mallik@gmail.com if you have any feedback or suggestions. There is a vast ecosystem and i seldom feel people don't know what they are doing, HR's don't know why or whom they should hire and above all vast costs in inapproriate implementation. Let me know if you need help with data related projects, pipelines, data warehousing or big data problems. I would be happy to help!
 
 
 ### Senior Software Engineer / Data Engineer
 
-### Profile
 
-Seasoned technology professional with over a decade of combined experience in full-stack development and data engineering. 
-Holding a bachelor's degree in Information Technology, I seamlessly integrate theoretical knowledge with practical skills to drive innovation and deliver efficient, scalable solutions.
-
-## Technical Proficiencies
-
-### Data Engineering
-
-**Languages & Libraries:** SQL, Python (pandas, pyspark)  
-**Databases:** MongoDB, Cassandra  
-**Platforms & Tools:** Datastax, Databricks, Apache Spark, Hadoop Ecosystem
+**Languages & Libraries:** SQL, Python (pandas, pyspark), PyArrow and vega-lite.  
+**Databases:** Cassandra, Oracle, Mysql, MongoDB and Bigquery.  
+**Platforms & Tools:** Datastax, Databricks, Apache Spark, Hadoop Ecosystem.
 
 - Adept in designing, implementing, and maintaining robust data pipelines and architectures
 - Skilled in data modeling, ETL processes, and working with structured and unstructured data
