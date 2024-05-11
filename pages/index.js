@@ -12,6 +12,13 @@ export default function Home() {
       <Head>
          <title>Data Landscape</title>
         <meta name="description" content="Data Engineering Cheat Sheets Hadoop SQL Pandas Big data powerbi"></meta>
+        <meta name='og:title' content='Data Landscape'/>
+        <meta name='og:description' content='Data Engineering Cheat Sheets Hadoop SQL Pandas Big data powerbi'/>
+        <meta name='twitter:title' content='Data Landscape'/>
+        <meta name='twitter:description' content='Data Engineering Cheat Sheets Hadoop SQL Pandas Big data powerbi'/>
+
+        <meta name='og:type' content='website'/>
+        <meta name="google-site-verification" content="c0-JIsJ5cF0G-UZiq11sAtrShcC_CynATAED_SV-Ha0" />
 
         <meta name="article:author" content="AI + Venu Mallik" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -62,7 +69,7 @@ export default function Home() {
          Data Engineering Best Practices         
            `} />
         <meta name='subject' content='Data Engineering Landscape comparision'/>
-        <meta name='og:description' content='TODO'/>
+         <meta name='summary' content='A summary of Data Engineering Landscape, technologies, tools and best practices.'/>
 
         <meta name='author' content='Venu Mallik, venu.mallik@gmail.com'/>
         <meta name='designer' content='Venu Mallik, venu.mallik@gmail.com'/>
@@ -75,9 +82,6 @@ export default function Home() {
         <meta name='HandheldFriendly' content='True'/>
         <meta name='MobileOptimized' content='320'/>
         <meta name='medium' content='blog'/>
-        <meta name='og:title' content='Data Landscape'/>
-        <meta name='og:type' content='article'/>
-        
         <meta name='og:email' content='venu.mallik@gmail.com'/>
         <meta name='og:phone_number' content='+91 9885920369'/>
         
