@@ -1,6 +1,6 @@
 import React, {useEffect} from 'react';
 import { GithubOutlined, UserOutlined, LinkedinOutlined, CrownOutlined } from '@ant-design/icons';
-import { Layout, Menu, theme, Flex, Space, Form, Drawer, InputNumber, Input, Button, Radio } from 'antd';
+import { Layout, Menu, theme, Flex, Space, Form, Drawer, InputNumber, Input, Button, Radio, Typography } from 'antd';
 import Markdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 
@@ -175,10 +175,8 @@ const App = () => {
             backgroundColor: colorBgContainer,
             height: '50px'
           }}>
-            <Flex  justify='space-evenly' >
-              
-            <h2>Data Engineering Blog</h2>
-            
+            <Flex  justify='space-evenly' align='center' style={{marginTop: '15px'}}>
+            <Typography.Title level={4}>Data Engineering Landscape</Typography.Title>
             <Button onClick={()=> setFormOpen(true)}>Submit Feedback</Button>
             <Drawer title="Multi Purpose Form" size='large'
               onClose={()=> setFormOpen(false)} open={formopen}>
