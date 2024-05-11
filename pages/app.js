@@ -24,9 +24,10 @@ const App = () => {
     }
   },[active])
 
-  const de_names = ['apache.md', 'batch.md', 'cloud.md', 'data_basic.md', 'data_operations.md', 'data_services.md', 'olap.md', 'oltp.md', 'README.md', 'realtime.md', 'routes.md', 'streams.md', 'types.md', 'visual.md']
-  const Headings = ["Basics", "Processing Types", "Services"]; 
-
+  const type = ["oltp.md","olap.md", "batch.md", "realtime.md", "streams.md"];
+  const services = ["apache.md","cloud.md","services.md", "visual.md"];
+  const formats = ["dbengines.md", "fileformats.md", "libraries.md", "workflows.md"];
+  const basics = ["basics.md", "operations.md", "types.md", "bitools.md"];
 
   return (
     <Layout style={{height: '100vh'}}>
