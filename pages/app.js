@@ -135,7 +135,7 @@ const App = () => {
             </Menu.Item>
           ))}
           <Menu.SubMenu title="Basics">
-          { ["basics.md", "operations.md", "types.md", "bitools.md"].map(item => ( 
+          { ["concepts.md", "basics.md", "operations.md", "types.md", "bitools.md"].map(item => ( 
             <Menu.Item key={`de/${item}`} title={item.split(".")[0]} 
             onClick={(e)=>    setActive(e.key)           } >
               {item.split(".")[0]}
